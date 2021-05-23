@@ -1,0 +1,9 @@
+C:\Users\TRIPLE FUNCTION\source\repos\Matematik\bin\Debug\netstandard2.0\Matematik.deps.json
+C:\Users\TRIPLE FUNCTION\source\repos\Matematik\bin\Debug\netstandard2.0\Matematik.dll
+C:\Users\TRIPLE FUNCTION\source\repos\Matematik\bin\Debug\netstandard2.0\Matematik.pdb
+C:\Users\TRIPLE FUNCTION\source\repos\Matematik\obj\Debug\netstandard2.0\Matematik.AssemblyInfoInputs.cache
+C:\Users\TRIPLE FUNCTION\source\repos\Matematik\obj\Debug\netstandard2.0\Matematik.AssemblyInfo.cs
+C:\Users\TRIPLE FUNCTION\source\repos\Matematik\obj\Debug\netstandard2.0\Matematik.csproj.CoreCompileInputs.cache
+C:\Users\TRIPLE FUNCTION\source\repos\Matematik\obj\Debug\netstandard2.0\Matematik.dll
+C:\Users\TRIPLE FUNCTION\source\repos\Matematik\obj\Debug\netstandard2.0\Matematik.pdb
+C:\Users\TRIPLE FUNCTION\source\repos\Matematik\obj\Debug\netstandard2.0\Matematik.csprojAssemblyReference.cache

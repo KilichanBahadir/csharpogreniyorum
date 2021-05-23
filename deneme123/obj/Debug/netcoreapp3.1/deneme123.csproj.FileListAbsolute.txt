@@ -1,0 +1,13 @@
+C:\Users\TRIPLE FUNCTION\source\repos\deneme123\bin\Debug\netcoreapp3.1\deneme123.exe
+C:\Users\TRIPLE FUNCTION\source\repos\deneme123\bin\Debug\netcoreapp3.1\deneme123.deps.json
+C:\Users\TRIPLE FUNCTION\source\repos\deneme123\bin\Debug\netcoreapp3.1\deneme123.runtimeconfig.json
+C:\Users\TRIPLE FUNCTION\source\repos\deneme123\bin\Debug\netcoreapp3.1\deneme123.runtimeconfig.dev.json
+C:\Users\TRIPLE FUNCTION\source\repos\deneme123\bin\Debug\netcoreapp3.1\deneme123.dll
+C:\Users\TRIPLE FUNCTION\source\repos\deneme123\bin\Debug\netcoreapp3.1\deneme123.pdb
+C:\Users\TRIPLE FUNCTION\source\repos\deneme123\obj\Debug\netcoreapp3.1\deneme123.csprojAssemblyReference.cache
+C:\Users\TRIPLE FUNCTION\source\repos\deneme123\obj\Debug\netcoreapp3.1\deneme123.AssemblyInfoInputs.cache
+C:\Users\TRIPLE FUNCTION\source\repos\deneme123\obj\Debug\netcoreapp3.1\deneme123.AssemblyInfo.cs
+C:\Users\TRIPLE FUNCTION\source\repos\deneme123\obj\Debug\netcoreapp3.1\deneme123.csproj.CoreCompileInputs.cache
+C:\Users\TRIPLE FUNCTION\source\repos\deneme123\obj\Debug\netcoreapp3.1\deneme123.dll
+C:\Users\TRIPLE FUNCTION\source\repos\deneme123\obj\Debug\netcoreapp3.1\deneme123.pdb
+C:\Users\TRIPLE FUNCTION\source\repos\deneme123\obj\Debug\netcoreapp3.1\deneme123.genruntimeconfig.cache

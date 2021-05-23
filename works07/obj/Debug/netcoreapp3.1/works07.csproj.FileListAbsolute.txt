@@ -1,0 +1,13 @@
+C:\Users\TRIPLE FUNCTION\source\repos\works07\obj\Debug\netcoreapp3.1\works07.AssemblyInfoInputs.cache
+C:\Users\TRIPLE FUNCTION\source\repos\works07\obj\Debug\netcoreapp3.1\works07.AssemblyInfo.cs
+C:\Users\TRIPLE FUNCTION\source\repos\works07\obj\Debug\netcoreapp3.1\works07.csproj.CoreCompileInputs.cache
+C:\Users\TRIPLE FUNCTION\source\repos\works07\bin\Debug\netcoreapp3.1\works07.exe
+C:\Users\TRIPLE FUNCTION\source\repos\works07\bin\Debug\netcoreapp3.1\works07.deps.json
+C:\Users\TRIPLE FUNCTION\source\repos\works07\bin\Debug\netcoreapp3.1\works07.runtimeconfig.json
+C:\Users\TRIPLE FUNCTION\source\repos\works07\bin\Debug\netcoreapp3.1\works07.runtimeconfig.dev.json
+C:\Users\TRIPLE FUNCTION\source\repos\works07\bin\Debug\netcoreapp3.1\works07.dll
+C:\Users\TRIPLE FUNCTION\source\repos\works07\bin\Debug\netcoreapp3.1\works07.pdb
+C:\Users\TRIPLE FUNCTION\source\repos\works07\obj\Debug\netcoreapp3.1\works07.dll
+C:\Users\TRIPLE FUNCTION\source\repos\works07\obj\Debug\netcoreapp3.1\works07.pdb
+C:\Users\TRIPLE FUNCTION\source\repos\works07\obj\Debug\netcoreapp3.1\works07.genruntimeconfig.cache
+C:\Users\TRIPLE FUNCTION\source\repos\works07\obj\Debug\netcoreapp3.1\works07.csprojAssemblyReference.cache

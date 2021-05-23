@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\TRIPLE FUNCTION\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\TRIPLE FUNCTION\\.nuget\\packages"
+    ]
+  }
+}
