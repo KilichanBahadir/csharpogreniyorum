@@ -4,13 +4,15 @@ using System.Text;
 
 namespace works13
 {
-    public abstract class GitarBase
+    public abstract class GitarBase:IGitar
     {
+        public int ID { get; set; }
         public int TelSayisi { get; set; }
         public int KulakSayisi { get; set; }
         public string KulakTipi { get; set; }
         public int KlavyeBasamakSayisi { get; set; }
         public string GövdeSekli { get; set; }
+       
 
         public string SesVer(string nota)
         {
