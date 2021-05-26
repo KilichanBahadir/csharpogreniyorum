@@ -6,6 +6,6 @@ namespace works13
 {
     public interface IGitar
     {
-       // public int ID { get; set; }
+        public int ID { get; set; }
     }
 }

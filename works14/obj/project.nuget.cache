@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "LuWmBMvamcI7lSW9wwRxSMk0VTrI+2KVAGN/iKG0diF7bIN3u9yHfdsdoS1HSyescvbCvtNA8rRyMA0M+Iuneg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\TRIPLE FUNCTION\\source\\repos\\works14\\works14.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\TRIPLE FUNCTION\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.13\\microsoft.netcore.app.host.win-x64.3.1.13.nupkg.sha512"
+  ],
+  "logs": []
+}
