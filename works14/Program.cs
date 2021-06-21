@@ -9,8 +9,10 @@ namespace works14
         {
             FileStream fs = new FileStream("C:\\deneme\\deneme.txt", FileMode.Append, FileAccess.Write, FileShare.Write);
             StreamWriter sw = new StreamWriter(fs);
+            
             Console.Write("Adınız : ");
-            sw.WriteLine(Console.ReadLine());
+            string adSoyad = Console.ReadLine();
+            sw.WriteLine(adSoyad);
             sw.Close();
             Console.WriteLine("Kayıt Eklendi.");
             Console.ReadKey();
