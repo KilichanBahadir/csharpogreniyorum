@@ -17,3 +17,4 @@ C:\Users\TRIPLE FUNCTION\source\repos\works21\obj\Debug\netcoreapp3.1\works21.cs
 C:\Users\TRIPLE FUNCTION\source\repos\works21\obj\Debug\netcoreapp3.1\works21.dll
 C:\Users\TRIPLE FUNCTION\source\repos\works21\obj\Debug\netcoreapp3.1\works21.pdb
 C:\Users\TRIPLE FUNCTION\source\repos\works21\obj\Debug\netcoreapp3.1\works21.genruntimeconfig.cache
+C:\Users\TRIPLE FUNCTION\source\repos\works21\obj\Debug\netcoreapp3.1\works21.csproj.AssemblyReference.cache
