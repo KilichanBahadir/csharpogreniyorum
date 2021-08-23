@@ -13,31 +13,34 @@ namespace Works30.Controllers
     [Route("api/[controller]")]
     public class ProductsController : ControllerBase
     {
-        private readonly OnlineStoreContext _onlineStoreContext;
-        public ProductsController(OnlineStoreContext onlineStoreContext)
+        private readonly OnlineStoreContext onlineStoreContext;//  << asıl değişken
+        public ProductsController(OnlineStoreContext onlineStoreContext)//<< parametre/değişken 
         {
-            _onlineStoreContext = onlineStoreContext;   
+            this.onlineStoreContext = onlineStoreContext;   
         }
+
+        //OnlineStoreContext= sınıfı onlineStoreContext=değişkeni/instance (örnek)
 
         [HttpGet]
         public async Task<ActionResult<List<Product>>> GetProducts()
         {
-            var products = await _onlineStoreContext.Products.ToListAsync();
+            
+            var products = await onlineStoreContext.Products.ToListAsync(); //asıldeğişkeni çağrımak için product üzerine metod uygulanır.
             return products;
 
         }
         [HttpGet("{Id}")]
         public async Task<ActionResult<Product>> GetProduct(long id)
         {
-            var product = await _onlineStoreContext.Products.FindAsync(id);
+            var product = await onlineStoreContext.Products.FindAsync(id);
             if (product == null) { return NotFound(); }
             return product;
         }
         [HttpPost]
         public async Task<ActionResult<Product>> CreateProduct(Product product)
         {
-            _onlineStoreContext.Products.Add(product);
-            await _onlineStoreContext.SaveChangesAsync();
+            onlineStoreContext.Products.Add(product);
+            await onlineStoreContext.SaveChangesAsync();
             return CreatedAtAction(nameof(GetProduct), new { id = product.Id }, product);
         }
 
@@ -45,10 +48,10 @@ namespace Works30.Controllers
         public async Task<ActionResult> UpdateProduct(long id, Product product)
         {
             if (id != product.Id) { return BadRequest(); }
-            _onlineStoreContext.Entry(product).State = EntityState.Modified;
+            onlineStoreContext.Entry(product).State = EntityState.Modified;
             try
             {
-                await _onlineStoreContext.SaveChangesAsync();
+                await onlineStoreContext.SaveChangesAsync();
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -64,19 +67,19 @@ namespace Works30.Controllers
             return NoContent();
         }
 
-        private bool ProductExists(long id) => _onlineStoreContext.Products.Any(p => p.Id == id);
+        private bool ProductExists(long id) => onlineStoreContext.Products.Any(p => p.Id == id);
 
         [HttpDelete("{id}")]
         public async Task<ActionResult> DeleteInstrument(long id)
         {
-            var instrument = await _onlineStoreContext.Products.FindAsync(id);
+            var instrument = await onlineStoreContext.Products.FindAsync(id);
             if (instrument == null)
             {
                 return NotFound();
 
             }
-            _onlineStoreContext.Products.Remove(instrument);
-            await _onlineStoreContext.SaveChangesAsync();
+            onlineStoreContext.Products.Remove(instrument);
+            await onlineStoreContext.SaveChangesAsync();
             return NoContent();
 
         }

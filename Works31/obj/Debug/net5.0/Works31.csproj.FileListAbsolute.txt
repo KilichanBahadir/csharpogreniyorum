@@ -1,0 +1,7 @@
+C:\Users\TRIPLE FUNCTION\source\repos\Works31\obj\Debug\net5.0\Works31.csproj.AssemblyReference.cache
+C:\Users\TRIPLE FUNCTION\source\repos\Works31\obj\Debug\net5.0\Works31.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\TRIPLE FUNCTION\source\repos\Works31\obj\Debug\net5.0\Works31.AssemblyInfoInputs.cache
+C:\Users\TRIPLE FUNCTION\source\repos\Works31\obj\Debug\net5.0\Works31.AssemblyInfo.cs
+C:\Users\TRIPLE FUNCTION\source\repos\Works31\obj\Debug\net5.0\Works31.csproj.CoreCompileInputs.cache
+C:\Users\TRIPLE FUNCTION\source\repos\Works31\obj\Debug\net5.0\Works31.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\TRIPLE FUNCTION\source\repos\Works31\obj\Debug\net5.0\Works31.MvcApplicationPartsAssemblyInfo.cache
