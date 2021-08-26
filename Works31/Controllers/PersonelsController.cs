@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Works31.Data;
+using Works31.DataAccess;
 using Works31.Models;
 
 namespace Works31.Controllers
@@ -13,20 +14,20 @@ namespace Works31.Controllers
     [Route("api/[controller]")]
     public class PersonelsController:ControllerBase
         {
-            private readonly JobApplicationContext jobApplicationContext;
-            public PersonelsController(JobApplicationContext jobApplicationContext)
+            private readonly PersonelRepository  personelRepository;
+            public PersonelsController(PersonelRepository personelRepository)
             {
-             this.jobApplicationContext = jobApplicationContext;
+             this.personelRepository = personelRepository;
             }
         
     [HttpGet]
     public async Task<ActionResult<List<Personel>>> GetPersonels()
     {
 
-        var personels = await jobApplicationContext.Personels.ToListAsync(); 
-        return personels;
+            return await personelRepository.GetPersonels();
 
     }
+        /*
     [HttpGet("{Id}")]
     public async Task<ActionResult<Personel>> GetPersonel(long id)
     {
@@ -82,6 +83,22 @@ namespace Works31.Controllers
             return NoContent();
 
         }
+
+        [HttpDelete]
+        public async Task<ActionResult> DeleteAllPersonel()
+        {
+            var people = await jobApplicationContext.Personels.ToListAsync();
+
+            foreach (Personel person in people)
+            {
+                jobApplicationContext.Personels.Remove(person);
+                await jobApplicationContext.SaveChangesAsync();
+                
+            }
+            return NoContent();
+
+        }
+        */
     }
 }
 

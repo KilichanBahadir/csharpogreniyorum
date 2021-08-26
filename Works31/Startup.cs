@@ -12,6 +12,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Works31.Data;
+using Works31.DataAccess;
 
 namespace Works31
 {
@@ -34,7 +35,7 @@ namespace Works31
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Works31", Version = "v1" });
             });
-
+            services.AddScoped<IPersonelRepository, PersonelRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
