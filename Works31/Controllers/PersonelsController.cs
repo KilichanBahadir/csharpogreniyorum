@@ -14,8 +14,8 @@ namespace Works31.Controllers
     [Route("api/[controller]")]
     public class PersonelsController:ControllerBase
         {
-            private readonly PersonelRepository  personelRepository;
-            public PersonelsController(PersonelRepository personelRepository)
+            private readonly IPersonelRepository  personelRepository;
+            public PersonelsController(IPersonelRepository personelRepository)
             {
              this.personelRepository = personelRepository;
             }
@@ -27,15 +27,17 @@ namespace Works31.Controllers
             return await personelRepository.GetPersonels();
 
     }
-        /*
+        
     [HttpGet("{Id}")]
     public async Task<ActionResult<Personel>> GetPersonel(long id)
     {
-        var personel = await jobApplicationContext.Personels.FindAsync(id);
+        var personel = await personelRepository.GetPersonelById(id);
         
         if (personel == null) { return NotFound(); }
         return personel;
     }
+
+        /*
         [HttpPost]
         public async Task<ActionResult<Personel>> CreatePersonel(Personel personel)
         {

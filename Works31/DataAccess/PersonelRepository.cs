@@ -16,6 +16,12 @@ namespace Works31.DataAccess
         {
             this.jobApplicationContext = jobApplicationContext;
         }
+
+        public async Task<Personel> GetPersonelById(long id)
+        {
+            return await jobApplicationContext.Personels.FindAsync(id);
+        }
+
         public async Task<List<Personel>> GetPersonels()
 
         {

@@ -58,3 +58,4 @@ C:\Users\TRIPLE FUNCTION\source\repos\Works31\obj\Debug\net5.0\Works31.dll
 C:\Users\TRIPLE FUNCTION\source\repos\Works31\obj\Debug\net5.0\ref\Works31.dll
 C:\Users\TRIPLE FUNCTION\source\repos\Works31\obj\Debug\net5.0\Works31.pdb
 C:\Users\TRIPLE FUNCTION\source\repos\Works31\obj\Debug\net5.0\Works31.genruntimeconfig.cache
+C:\Users\TRIPLE FUNCTION\source\repos\Works31\obj\Debug\net5.0\Works31.csproj.AssemblyReference.cache
