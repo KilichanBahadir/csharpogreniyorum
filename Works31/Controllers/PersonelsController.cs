@@ -37,70 +37,49 @@ namespace Works31.Controllers
         return personel;
     }
 
-        /*
+        
         [HttpPost]
         public async Task<ActionResult<Personel>> CreatePersonel(Personel personel)
         {
-            jobApplicationContext.Personels.Add(personel);
-            await jobApplicationContext.SaveChangesAsync();
-            return CreatedAtAction(nameof(GetPersonel), new { id = personel.Id }, personel);
-        }
+           
+            Personel p= await personelRepository.AddPersonel(personel);
 
+                                    
+            return CreatedAtAction(nameof(GetPersonel), new { id = p.Id }, p);
+        }
+        
         [HttpPut("{id}")]
         public async Task<ActionResult> UpdatePersonel(long id, Personel personel)
         {
             if (id != personel.Id) { return BadRequest(); }
-            jobApplicationContext.Entry(personel).State = EntityState.Modified;
-            try
-            {
-                await jobApplicationContext.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!PersonelExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-            return NoContent();
+
+            if (!await personelRepository.isPersonelExist(id)) return NotFound();
+
+             try
+             {
+              Personel p= await personelRepository.UpdatePersonel(personel);
+             }
+             catch (Exception)
+   
+             {
+             throw;
+             }
+             return NoContent();
         }
 
-        private bool PersonelExists(long id) => jobApplicationContext.Personels.Any(p => p.Id == id);
-
+       
+        
         [HttpDelete("{id}")]
         public async Task<ActionResult> DeletePersonel(long id)
         {
-            var personel = await jobApplicationContext.Personels.FindAsync(id);
-            if (personel == null)
-            {
-                return NotFound();
-
-            }
-            jobApplicationContext.Personels.Remove(personel);
-            await jobApplicationContext.SaveChangesAsync();
+            
+            if (!await personelRepository.isPersonelExist(id)) return NotFound();
+            bool isDeleted = await personelRepository.DeletePersonel(id);
+            if (!isDeleted) { return BadRequest(); }
             return NoContent();
 
         }
-
-        [HttpDelete]
-        public async Task<ActionResult> DeleteAllPersonel()
-        {
-            var people = await jobApplicationContext.Personels.ToListAsync();
-
-            foreach (Personel person in people)
-            {
-                jobApplicationContext.Personels.Remove(person);
-                await jobApplicationContext.SaveChangesAsync();
-                
-            }
-            return NoContent();
-
-        }
-        */
+        
     }
 }
 
