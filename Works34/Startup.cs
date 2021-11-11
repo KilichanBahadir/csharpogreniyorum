@@ -10,7 +10,10 @@ using Microsoft.OpenApi.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
+using Works34.Bal.Abstract;
+using Works34.Bal.Concrete;
 using Works34.Core.DataAccess;
 using Works34.Core.DataAccess.EntityFramework;
 using Works34.Dal.Abstract;
@@ -39,10 +42,11 @@ namespace Works34
 
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Works34", Version = "v1" });
             });
-
+            services.AddAutoMapper(Assembly.GetExecutingAssembly());
             services.AddScoped(typeof(IEntityRepository<>), typeof(EfEntityRepositoryBase<>));
             services.AddScoped<IContactDal, EfContactDal>();
-           
+            services.AddScoped<IContactService, ContactManager>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
