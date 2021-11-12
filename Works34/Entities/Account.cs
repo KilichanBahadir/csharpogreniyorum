@@ -1,0 +1,18 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Works34.Core.Entities;
+
+namespace Works34.Entities
+{
+    public class Account : IEntity
+    {
+        public int Id { get;set; }
+        public string Name { get; set; }
+        public string TaxId { get; set; }
+        public string Email { get; set; }
+        public string Address { get; set; }
+        public string Phone { get; set; }
+    }
+}

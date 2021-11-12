@@ -14,6 +14,7 @@ namespace Works34.Dal.Concrete.EntityFramework
 
         }
         public DbSet<Contact> Contacts { get; set; }
+        public DbSet<Account> Accounts { get; set; }
 
     }
 }

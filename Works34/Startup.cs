@@ -46,6 +46,8 @@ namespace Works34
             services.AddScoped(typeof(IEntityRepository<>), typeof(EfEntityRepositoryBase<>));
             services.AddScoped<IContactDal, EfContactDal>();
             services.AddScoped<IContactService, ContactManager>();
+            services.AddScoped<IAccountDal, EfAccountDal>();
+            services.AddScoped<IAccountService, AccountManager>();
 
         }
 

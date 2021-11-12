@@ -13,6 +13,8 @@ namespace Works34.Helpers
         public AutoMapperProfiles()
         {
             CreateMap<Contact, ContactDto>().ReverseMap();
+
+            CreateMap<Account, AccountDto>().ReverseMap();
         }
     }
 }
